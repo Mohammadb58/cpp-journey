@@ -16,8 +16,10 @@ int main(){
     //string 
     const string NAME = "Mohamad";
 
+    // This will cause an error sicne NAME is a const
     // NAME = 'Ali'
-    grade = 'B';
+    // This updates the grade to become B
+     grade = 'B';
     // printing them all
 
     cout << year << endl;
