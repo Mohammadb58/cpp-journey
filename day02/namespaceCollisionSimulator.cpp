@@ -22,5 +22,8 @@ int main(){
     cout << "The guessed x " << x << endl;
     cout << "The guessed x " << x << endl;
 
+    // This is where the issue lies, the local version overwrites the int 5 
+    // This issue can also occur using the using namespace std;
+    
     return 0;
 }
