@@ -18,7 +18,7 @@ int main(){
         cout << "\nYou entered " << userChar << " Which is a capital letter.\n";
     }
     else if (userChar >= 97 && userChar <= 122){
-        cout << "\nYou entered " << userChar << " Which is a lowecase letter.\n";
+        cout << "\nYou entered " << userChar << " Which is a lowercase letter.\n";
     }
     else{
         cout << "\nIt's something else\n";
