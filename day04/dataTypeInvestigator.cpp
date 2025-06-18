@@ -3,7 +3,6 @@ using namespace std;
 
 int main(){
     // int, double, char, string, bool, const
-    /*
     int num;
     // int
     cout << "Enter a num: ";
@@ -54,7 +53,6 @@ int main(){
     cout << "dec as a bool: " << newDec5 << endl;
     // any non-zero num is true else false 
     cout << "dec as a boolalpha: " << boolalpha << newDec5 << endl;
-    */
 
     char charA;
     // char
@@ -76,16 +74,16 @@ int main(){
     // This converts 'A' tp "A"
     string charA3 (1, charA);
     cout << "char as a string: " << charA3 << endl;
-    // will return 1/0 
+    // will return 1 always but 48 should be false 
+    // But the cin >> char takejs 4 and leave the 8 in the buffer 
     bool charA4 = (bool)charA;
     cout << "char as a bool: " << charA4 << endl;
     
-    /*
     string name;
     // string
     cout << "Enter a string: ";
-    getline(cin>>ws, name);
-    cout << name << endl;
+    cin >> name;
+    cout << "Original string: " << name << endl;
     bool working;
     // bool
     cout << "Enter a bool state(1/0): ";
@@ -97,6 +95,5 @@ int main(){
     cin >> x;
     const bool y = x;
     cout << y << endl;
-    */
     return 0;
 }
