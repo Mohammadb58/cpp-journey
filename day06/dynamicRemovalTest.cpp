@@ -8,6 +8,8 @@ int main(){
     string name;
     cout << "Enter your first name: ";
     getline(cin >> ws, name);
+    // name.find(' ') will always be true since its either a index or npos
+    // this allows us to see if find ret npos aka no space found
     bool isThereASpace = (name.find(' ') != string::npos); 
     if (isThereASpace){
         int space = name.find(' ');
