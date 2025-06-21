@@ -20,7 +20,7 @@ int main(){
     int len = email.length();
     //cout << dotIdx << ' ' << secDotIdx << endl;
     
-    if(dot && atSign && !spaces && secDotIdx -1 > atSignIdx && atSign2 == 1 && dotIdx - 1 > atSignIdx && dotIdx !=0 && atSignIdx != 0 && dotIdx != len -1 && atSignIdx != len -1){
+    if(dot && atSign && !spaces && secDotIdx -1 < atSignIdx && atSign2 == 1 && dotIdx - 1 > atSignIdx && dotIdx !=0 && atSignIdx != 0 && dotIdx != len -1 && atSignIdx != len -1){
         cout << "\nVaild email: " << email << endl;
     }
     else {
