@@ -10,7 +10,7 @@ int main(){
     string number2;
     cout << "\nPlease enter your number in this format e.g.(123) 456-7890: ";
     getline(cin >> ws, number2);
-    int len2 = number2.length(); // should be 14 chars 
+    int len2 = number2.length(); // should be 14 chars but may have extra whitespace
     int trailSpace = number2.find_last_not_of(' ');
     string number = number2.erase(trailSpace+1, len2-trailSpace);
     int len = number.length(); // should be 14 chars 
