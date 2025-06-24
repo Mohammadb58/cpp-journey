@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     cout << "------------------------------------------\n";
     string input;
-    int counter = 0, len, num=0;
+    int counter = 0, len;
     double sum = 0, count = 0, avr = 0;
     bool numIsDigtit = false;
     cout << "\nPlease enter a postive number: ";
