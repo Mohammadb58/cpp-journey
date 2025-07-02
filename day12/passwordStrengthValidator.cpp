@@ -9,8 +9,13 @@ int main(){
     int space = 0, len = 0, counter = 0;
     bool isDigitInPassword = false, isUpper = false, isLower = false, isSpecial = false;
     do{
-        int space = 0, len = 0, counter = 0;
-        bool isDigitInPassword = false, isUpper = false, isLower = false, isSpecial = false;
+        space = 0;
+        len = 0; 
+        counter = 0;
+        isDigitInPassword = false;
+        isUpper = false; 
+        isLower = false;
+        isSpecial = false;
         cout << "\nPlease enter your password: ";
         getline(cin >> ws, password);
         len = password.length(); // we need it to be over 8
