@@ -8,6 +8,7 @@ int main() {
     getline(cin, input);
     int age = stoi(input);
 
+    // the age = 18 is setting age to be 18!
     if (age = 18) {
         cout << "You're exactly 18!";
     }
