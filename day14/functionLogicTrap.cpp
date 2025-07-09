@@ -5,10 +5,10 @@ using namespace std;
 
 int main(){
     cout << "\n-----------------------------------------\n";
-    int num1 = 0, num2 = 0;
+    double num1 = 0, num2 = 0;
     double total =0;
     char operant;
-    bool num2IsZerp = false;
+    bool num2IsZero = false;
     string op = "/*+-";
     cout << "\n"
             "7 8 9 \n" <<
@@ -35,7 +35,7 @@ int main(){
                     total = num1 / num2;
                 }
                 else{
-                    num2IsZerp = true;
+                    num2IsZero = true;
                 }
                 break;
             case '*':
@@ -48,7 +48,7 @@ int main(){
                 total = num1 - num2;
                 break;
             }
-        if (num2IsZerp == false){
+        if (num2IsZero == false){
             cout << "The total is "<< total;
         }
         else{
