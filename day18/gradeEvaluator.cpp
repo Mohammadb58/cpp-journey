@@ -25,7 +25,7 @@ int main(){
             cout << "Perfect!, Too easy!";
             break;
         case 10:
-            cout << "Was is that easy!";
+            cout << "Was it that easy!";
             break;
         default:
             cout << "Wow, That was bad!";
@@ -35,8 +35,6 @@ int main(){
     else{
         cout << "INVAILD GRADE!\n";
     }
-
-
     cout << "\n-----------------------------------";
     return 0;
 }
