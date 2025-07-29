@@ -24,7 +24,7 @@ int main(){
         newGPA2 = newGPA;
     }
     int dot = newGPA2.find('.');
-    if((dot == 1)){
+    if((dot != -1)){
         double numGPA = stod(newGPA2);
         cout << '\n' << numGPA << '\n'; 
         if (numGPA < 2.0){
