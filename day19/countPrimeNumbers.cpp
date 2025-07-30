@@ -16,6 +16,7 @@ int main(){
         else{
             cout << i << " PRIME.\n";
         }
+        // Never forget to reset the flag!
         notPrimeFlag = false;
     }
 
@@ -33,7 +34,7 @@ int main(){
     10%3= 1
     10%2= 0
     STOP HERE
-    Conc: sinsce we have at lease one 0 it must not be PRIME.
+    Conc: since we have at lease one 0 it must not be PRIME.
     */
     cout << "-----------------------------------";
     return 0;
