@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     cout << "-----------------------------------";
     int j = 0, sum = 0, maxStreak = 0, currStreak = 0, maxEnds = 0;
-                        // no matter the ned range 2 is always the longest streak!
+                        // no matter the end range 2 is always the longest streak!
     for (int i = 1; i <= 100; i++){
         j = i;
         sum = 0;
@@ -35,3 +35,8 @@ int main(){
     cout << "-----------------------------------";
     return 0;
 }
+/*
+The longest possible streak is 2.
+Since each time we are incrementing by 1 and the only time
+we hit E E is from 19, 1+9=10 to 20, 2+0=2!
+*/
