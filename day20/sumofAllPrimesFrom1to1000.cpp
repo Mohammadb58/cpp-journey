@@ -5,7 +5,7 @@ int main(){
     cout << "-----------------------------------";
     bool prime = true;
     int sum = 0;
-    for(int i = 2; i <= 100000; i++){
+    for(int i = 2; i <= 1000; i++){
         for(int j = i - 1; j >= 2; j--){
             if(i % j == 0){
                 prime = false;
