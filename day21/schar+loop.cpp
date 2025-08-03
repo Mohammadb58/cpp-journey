@@ -1,17 +1,20 @@
 #include<iostream>
+#include<cctype>
 using namespace std;
 
 int main(){
     cout << "-----------------------------------";
-    string s = "Never let the fear of striking out keep you from playing the game.";
+    string s = "Never let theE fear of striking out keep you from playing the game.";
     int eCount = 0;
-    for(int i = 0; i < s.length(); i++){
-        if(s[i] == 'e'){
+    for(char c : s){
+        c = tolower(c);
+        if(c == 'e'){
             eCount++;
         }
     }
-    cout << "\n" << eCount << "\n";
+    cout << "\n" << eCount << endl;
 
     cout << "-----------------------------------";
     return 0;
 }
+
