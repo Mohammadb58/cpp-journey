@@ -12,7 +12,7 @@ int main(){
         num = i+64;
         for (int k = 1; k <= i*2-1; k++){
             cout << char(num) << " ";
-            if (k <= i){
+            if (k < i){
                 num--;
             }
             else{
