@@ -2,7 +2,7 @@
 using namespace std;
 
 void welcomeMessage(string name){
-    cout << "\nHello, " << name << " ! Nice to meet you.";
+    cout << "\nHello, " << name << "! Nice to meet you.";
 }
 
 int main(){
