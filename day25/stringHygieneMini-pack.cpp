@@ -7,13 +7,14 @@ string trimEdges(string s){
     string trimmedString = "";
     len = s.length();
     bool allSpaces = true;
-    for (int i = 0; i < len; i++){
-        if (s[i] != ' '){
-            allSpaces = false;
+    if(!s.empty()){
+        for (int i = 0; i < len; i++){
+            if (s[i] != ' '){
+                allSpaces = false;
+            }
         }
     }
-
-    if(!allSpaces && (!s.empty() && (s[0] == ' ' || s[len - 1] == ' '))){
+    if((!allSpaces && !s.empty()) && (s[0] == ' ' || s[len - 1] == ' ')){
         leadingChar = s.find_first_not_of(' ');
         trailingChar = s.find_last_not_of(' ');
         trimmedString = s.substr(leadingChar, trailingChar-leadingChar+1);
