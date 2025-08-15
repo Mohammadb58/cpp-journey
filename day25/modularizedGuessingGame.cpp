@@ -60,7 +60,7 @@ int main(){
 
     cout << "\n-----------------------------------";
     srand(time(NULL));
-    //playGame();
+    playGame();
     /*
     thats why we need pass-by-ref
     int min = 55;
