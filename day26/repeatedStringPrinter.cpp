@@ -8,7 +8,7 @@ void printStringNTimes(string text, int count = 3){
     }
 }
 void runTests(){
-    printStringNTimes("MOE", 5);
+    printStringNTimes("MOE");
 }
 
 int main(){
