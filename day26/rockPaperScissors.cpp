@@ -45,41 +45,59 @@ void printChoice(int choice){
     }
 }
 
-void playGame(){
-    int rounds = 0;
-    cout << "\n\nHow many rounds would you like to play: ";
-    cin >> rounds;
-    for(int i = 1; i <= rounds; i++){
-        int cpu = computerChoice();
-        int user = userChoice();
-        int winner = determineWinner(user, cpu);
-        cout << "\nYou choose: ";
-        printChoice(user);
-        cout << "\nThe cpu choose: ";
-        printChoice(cpu);
-        if(winner == 0){
-            cout << "\nIt's a tie!!!";
-        }
-        else if(winner == 1){
-            cout << "\nYOU WON!!!";
-        }
-        else{
-            cout << "\nYOU LOST!";
-        }
+int playGame(){
+    int cpu = computerChoice();
+    int user = userChoice();
+    int winner = determineWinner(user, cpu);
+    cout << "\nYou choose: ";
+    printChoice(user);
+    cout << "\nThe cpu choose: ";
+    printChoice(cpu);
+    if(winner == 0){
+        cout << "\nIt's a tie!!!";
+        return 0;
+    }
+    else if(winner == 1){
+        cout << "\nYOU WON!!!";
+        return 1;
+    }
+    else{
+        cout << "\nYOU LOST!";
+        return -1;
     }
 }
-/*
 void runMatch(int rounds = 3){
+    int userScore = 0, cpuScore = 0;
+    int scoreChecker = 0;
     for(int i = 1; i <= rounds; i++){
-        playGame();
+        scoreChecker = playGame();
+        if(scoreChecker == 1){
+            userScore++;
+        }
+        else if(scoreChecker == -1){
+            cpuScore++;
+        }
     }
+    string finalwinner;
+    if(userScore > cpuScore){
+        finalwinner = "YOU!";
+    }
+    else if(userScore < cpuScore){
+        finalwinner = "CPU!";
+    }
+    else{
+        finalwinner = "TIE!";
+    }
+    cout << "\n\nYour score is " << userScore << "\nCPU score is " << cpuScore << " and the winner is...\n" << finalwinner;
 }
-    */
 
 int main(){
     cout << "\n-----------------------------------";
     srand(time(NULL));
-    playGame();
+    int rounds = 0;
+    cout << "\nHow many rounds: ";
+    cin >> rounds;    
+    runMatch(rounds);
     cout << "\n-----------------------------------";
 
     return 0;
