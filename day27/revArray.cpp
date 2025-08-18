@@ -34,12 +34,14 @@ int main(){
     cout << "\nIn reverse: ";
     for (int k = arraySize - 1; k >= 0; k--){
         cout << numsArray[k] << " ";
+        theCopyOfNumsArray[numsArray - numsArray];
     }
 
     cout << "\nThe Copied Array: ";
     for(int c = 0; c < arraySize; c++){
         cout << theCopyOfNumsArray[c] << " ";
-    }    
+    }  
+      
 
     cout << "\n-----------------------------------";
 
