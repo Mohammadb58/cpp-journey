@@ -3,6 +3,17 @@
 
 using namespace std;
 
+int getValidNum(){
+    int num = 0;
+    cout << "\nWhat is the number: ";
+    while(!(cin >> num) || num <= 0 || num > 100){
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "\nInvaild, Num: ";
+    }
+    return num;
+}
+
 int main(){
     cout << "\n-----------------------------------";
     int array1[5] = {};
