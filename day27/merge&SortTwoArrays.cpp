@@ -24,7 +24,6 @@ int main(){
     // dec both arrays based on user input side 
     // However, cpp does not allow this its the IDE/GCC that allows it here in this case
     int arrayOne[arrayOneSize], arrayTwo[arrayTwoSize];
-    // This causes issues wiht large SIZES like 200 elements 
     
     // Filling array 1 with numbers.
     cout << "\nFill the First Array.";
