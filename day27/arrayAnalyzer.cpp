@@ -20,19 +20,14 @@ int main(){
     int theSizeOfTheArray = getValidNum();
     int theArray[theSizeOfTheArray] = {};
     int currentNum;
-    int k = 1;
+    int k = 4;
     for (int i = 0; i < theSizeOfTheArray; i++){
         currentNum = getValidNum();
         theArray[i] = currentNum;
     }
     int shiftedArray[theSizeOfTheArray] = {};
     for(int i = 0; i < theSizeOfTheArray; i++){
-        if(i-k < 0){
-            shiftedArray[(i+k)% theSizeOfTheArray] = theArray[i];
-        }
-        else{
-            shiftedArray[i] = theArray[i-k];
-        }
+        shiftedArray[(i+k)% theSizeOfTheArray] = theArray[i];
     }
     cout << "\nOriginal array: ";
     for(int i = 0; i < theSizeOfTheArray; i++){
