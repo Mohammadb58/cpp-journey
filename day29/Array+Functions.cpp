@@ -13,7 +13,11 @@ arrayMinMax findMinMax(int ourArray[], int sizeOfTheArray){
     arrayMinMax arr;
     int minNumInArray = ourArray[0];
     int maxNumInArray = ourArray[0];
-    cout << "DEBUG: min: " << minNumInArray << " max: " << maxNumInArray;
+    // in case we dont find min or max in the arrat and they remin set 
+    arr.minNumInArray = minNumInArray;
+    arr.maxNumInArray = maxNumInArray;
+
+    //cout << "DEBUG: min: " << minNumInArray << " max: " << maxNumInArray;
     for(int i = 0; i < sizeOfTheArray; i++){
         if(ourArray[i] > maxNumInArray){
             arr.maxNumInArray = ourArray[i];
