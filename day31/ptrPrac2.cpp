@@ -14,7 +14,7 @@ int main(){
     cout << "\npNum val: " << pNum; // hex address of num
     cout << "\npNum address: " << &pNum; // hex address of pNum
     cout << "\npNum address deref: " << *(&pNum); // hex address of num 
-    cout << "\npNum address x2deref: " << **(&pNum); // hex address of num 
+    cout << "\npNum address x2deref: " << **(&pNum); // 1 
     cout << "\n-----------------------------------";
     return 0;
 }
