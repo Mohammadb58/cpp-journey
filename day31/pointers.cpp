@@ -14,7 +14,7 @@ int main(){
     cout << "\npNum: " << *pNum;
 
     cout << "\nnum: " << &num;
-    cout << "\npNum: " << &pNum;
+    cout << "\npNum: " << pNum;
     cout << "\n-----------------------------------";
     return 0;
 }
