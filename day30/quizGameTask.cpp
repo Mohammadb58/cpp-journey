@@ -41,11 +41,11 @@ int main(){
         answer = lowerCaseIt(answer);
         //cout << "\nDEBUG ANSWER IN MAIN: " << answer;
         if(answer == answersArray[i]){
-            cout << "\nCorrect +10 points!";
+            cout << "\nCorrect +20 points!";
             score += 20;
         }
         else{
-            cout << "\nIncorrect, the asnwer was " << answersArray[i];
+            cout << "\nIncorrect, the asnwer was " << answersArray[i] << " -5 points!";
             if(score >= 5){
                 score -= 5;
             }
