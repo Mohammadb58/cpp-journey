@@ -12,7 +12,7 @@ int main(){
     stringstream TEXTStream(TEXT);
     int WordCounter = 0;
     while(TEXTStream >> word){
-        while(ispunct(word.back()) || word.front()){
+        while(ispunct(word.back())){
             word.pop_back();
         }
         cout << "\n" << word;
