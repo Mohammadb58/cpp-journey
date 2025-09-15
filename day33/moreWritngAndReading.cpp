@@ -20,7 +20,7 @@ int main(){
             fin >> word;
         }
     }
-    fout.close();
+    fin.close();
     cout << "\n" << sum;
     cout << "\n------------------------------";
     return 0;
