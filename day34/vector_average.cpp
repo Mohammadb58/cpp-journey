@@ -20,7 +20,6 @@ int main() {
         sum += nums[i];
         count++;
     }
-
     cout << "\nSUM: " << sum;
     cout << "\nAvrage: " << sum/count;
     cout << "\n\n";
