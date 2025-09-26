@@ -12,9 +12,9 @@ int main() {
     theStack.push("MK");
     theStack.push("MA");
 
-    cout << "\nSIZE: \n" << theStack.size();
+    cout << "\nSIZE:" << theStack.size();
     while(!theStack.empty()){
-        cout << theStack.top() << endl; 
+        cout << endl << theStack.top(); 
         theStack.pop();
     }
 
